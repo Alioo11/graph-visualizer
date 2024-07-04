@@ -1,0 +1,181 @@
+:root {
+  /* GlobalColors */
+  --color-assistive-error: #d72c0d;
+  --color-assistive-error-dark: #a21b00;
+  --color-assistive-error-darker: #6c0f00;
+  --color-assistive-error-hover: #bc2200;
+  --color-assistive-error-light: #fed3d1;
+  --color-assistive-error-lighter: #fff0f0;
+  --color-assistive-error-paler: #fff4f4;
+  --color-assistive-info: #5bcdda;
+  --color-assistive-info-dark: #00bef0;
+  --color-assistive-info-main: #0288D1;
+  --color-assistive-info-light: #E6F3FA;
+  --color-assistive-info-lighter: #d5f3f8;
+  --color-assistive-info-pale: #e4f7fa;
+  --color-assistive-info-paler: #ebf9fc;
+  --color-assistive-info-variant: #347c84;
+  --color-assistive-success: #00a47c;
+  --color-assistive-success-hover: #06d3a1;
+  --color-assistive-success-dark: #008060;
+  --color-assistive-success-light: #aee9d1;
+  --color-assistive-success-lighter: #e2f1ea;
+  --color-assistive-success-pale: #ecf6f1;
+  --color-assistive-success-paler: #f1f8f5;
+  --color-assistive-warning: #ffc453;
+  --color-assistive-warning-dark: #916a00;
+  --color-assistive-warning-darker: #fff2e2;
+  --color-assistive-warning-hover: #f2a000;
+  --color-assistive-warning-light: #ffd79d;
+  --color-assistive-warning-lighter: #ffebd3;
+  --color-assistive-warning-paler: #fff5ea;
+  --color-bg-disabled-dark: #6d7175;
+  --color-bg-disabled-light: #0000001F;
+  --color-bg-primary: #ffffff;
+  --color-bg-dark: #f6f6f7;
+  --color-bg-darker: #f0f0f0;
+  --color-bg-hover: #f1f2f3;
+  --color-border-dark: #575959;
+  --color-border-light: #EEE;
+  --color-border-light-pale: #d2d5d8;
+  --color-border-light-paler: #e4e6e7;
+  --color-primary-main: #0050FF;
+  --color-primary-dark: #002880;
+  --color-primary-hover: #002880;
+  --color-primary-light: #80A7FF;
+  --color-primary-lighter: #D0DEFF;
+  --color-primary-pale: #B2CAFF;
+  --color-primary-paler: #f5f8ff;
+  --color-secondary-main: #ff8833;
+  --color-text-disabled: #00000061;
+  --color-text-primary: #202223;
+  --color-text-primary-pale: #202223ad;
+  --color-text-primary-paler: #20222359;
+  --color-text-secondary: #00000099;
+
+ 
+
+  /* GlobalCurves */
+  --curve-circle: 50%;
+  --curve-lg: 1.5rem;
+  --curve-md: 1rem;
+  --curve-sm: 0.5rem;
+  --curve-xlg: 2rem;
+  --curve-xsm: 0.25rem;
+  --curve-xxsm: 0.125rem;
+
+  /* GlobalPaces */
+  --pace-fast: 0.3s;
+  --pace-normal: 0.6s;
+  --pace-slow: 0.9s;
+  --pace-xFast: 0.15s;
+  --pace-xSlow: 1.5s;
+
+  /* GlobalShadows */
+  --shadow-lg: 0 0.125rem 0.25rem rgb(0 0 0 / 20%);
+  --shadow-md: 0 0 0.25rem 0.125rem rgba(0, 0, 0, 0.075);
+  --shadow-sm: 0 0 0.25rem 0.125rem rgba(0, 0, 0, 0.025);
+
+  /* GlobalSpacings */
+  --spacing-0: 0rem;
+  --spacing-0_5: 0.125rem;
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 1rem;
+  --spacing-4: 1.5rem;
+  --spacing-5: 3rem;
+  --spacing-6: 5rem;
+  --spacing-7: 7rem;
+  --spacing--0_5: -0.125rem;
+  --spacing--1: -0.25rem;
+  --spacing--2: -0.5rem;
+  --spacing--3: -1rem;
+  --spacing--4: -1.5rem;
+  --spacing--5: -3rem;
+  --spacing--6: -5rem;
+  --spacing--7: -7rem;
+  --spacing-auto: auto;
+
+  /* GlobalTypographies */
+  --font-size-h-lg: 24px;
+  --font-size-h-lg-b: 24px;
+  --font-size-h-md: 20px;
+  --font-size-h-md-b: 20px;
+  --font-size-h-sm: 18px;
+  --font-size-h-sm-b: 18px;
+  --font-size-h-xl: 32px;
+  --font-size-h-xl-b: 32px;
+  --font-size-lg: 16px;
+  --font-size-lg-b: 16px;
+  --font-size-lmd: 13px;
+  --font-size-lmd-b: 13px;
+  --font-size-md: 14px;
+  --font-size-md-b: 14px;
+  --font-size-sm: 12px;
+  --font-size-sm-b: 12px;
+  --font-size-xsm: 11px;
+  --font-size-xsm-b: 11px;
+  --font-size-xxsm: 10px;
+  --font-size-xxsm-b: 10px;
+  --font-weight-h-lg: normal;
+  --font-weight-h-lg-b: bold;
+  --font-weight-h-md: normal;
+  --font-weight-h-md-b: bold;
+  --font-weight-h-sm: normal;
+  --font-weight-h-sm-b: bold;
+  --font-weight-h-xl: normal;
+  --font-weight-h-xl-b: bold;
+  --font-weight-lg: normal;
+  --font-weight-lg-b: bold;
+  --font-weight-lmd: normal;
+  --font-weight-lmd-b: bold;
+  --font-weight-md: normal;
+  --font-weight-md-b: bold;
+  --font-weight-sm: normal;
+  --font-weight-sm-b: bold;
+  --font-weight-xsm: normal;
+  --font-weight-xsm-b: bold;
+  --font-weight-xxsm: normal;
+  --font-weight-xxsm-b: bold;
+}
+
+@media (min-width: 992px) {
+  :root {
+    --font-size-h-lg: 28px;
+    --font-size-h-lg-b: 28px;
+    --font-size-h-md: 22px;
+    --font-size-h-md-b: 22px;
+    --font-size-h-sm: 20px;
+    --font-size-h-sm-b: 20px;
+    --font-size-h-xl: 36px;
+    --font-size-h-xl-b: 36px;
+    --font-size-lg: 18px;
+    --font-size-lg-b: 18px;
+    --font-size-md: 14px;
+    --font-size-md-b: 14px;
+    --font-size-sm: 14px;
+    --font-size-sm-b: 14px;
+    --font-size-xsm: 13px;
+    --font-size-xsm-b: 13px;
+    --font-size-xxsm: 11px;
+    --font-size-xxsm-b: 11px;
+    --font-weight-h-lg: normal;
+    --font-weight-h-lg-b: bold;
+    --font-weight-h-md: normal;
+    --font-weight-h-md-b: bold;
+    --font-weight-h-sm: normal;
+    --font-weight-h-sm-b: bold;
+    --font-weight-h-xl: normal;
+    --font-weight-h-xl-b: bold;
+    --font-weight-lg: normal;
+    --font-weight-lg-b: bold;
+    --font-weight-md: normal;
+    --font-weight-md-b: bold;
+    --font-weight-sm: normal;
+    --font-weight-sm-b: bold;
+    --font-weight-xsm: normal;
+    --font-weight-xsm-b: bold;
+    --font-weight-xxsm: normal;
+    --font-weight-xxsm-b: bold;
+  }
+}

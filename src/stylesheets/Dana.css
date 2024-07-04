@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Dana';
+  /* src: url('https://hs3-cf.behtarino.com/static/fonts/Dana/dana-fanum-bold.woff2') format('woff2'), */
+    /* url('https://hs3-cf.behtarino.com/static/fonts/Dana/dana-fanum-bold.woff') format('woff'), */
+    /* url('https://hs3-cf.behtarino.com/static/fonts/Dana/Dana-FaNum-Bold.ttf') format('truetype'); */
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Dana';
+  /* src: url('https://hs3-cf.behtarino.com/static/fonts/Dana/dana-fanum-demibold.woff2') format('woff2'), */
+    /* url('https://hs3-cf.behtarino.com/static/fonts/Dana/dana-fanum-demibold.woff') format('woff'), */
+    /* url('https://hs3-cf.behtarino.com/static/fonts/Dana/Dana-FaNum-DemiBold.ttf') format('truetype'); */
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Dana';
+  /* src: url('https://hs3-cf.behtarino.com/static/fonts/Dana/dana-fanum-regular.woff2') format('woff2'), */
+    /* url('https://hs3-cf.behtarino.com/static/fonts/Dana/dana-fanum-regular.woff') format('woff'), */
+    /* url('https://hs3-cf.behtarino.com/static/fonts/Dana/Dana-FaNum-Regular.ttf') format('truetype'); */
+  font-weight: normal;
+}
+
+text{
+  font-family: 'Dana' !important;
+}
