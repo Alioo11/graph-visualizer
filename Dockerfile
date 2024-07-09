@@ -8,7 +8,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install Dependencies
-RUN npm install
+RUN npm install -f 
 
 # Copy Source Code
 COPY . .
