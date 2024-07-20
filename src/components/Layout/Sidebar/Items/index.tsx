@@ -1,4 +1,4 @@
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { useTheme, List, ListItem, ListItemButton, Collapse } from "@mui/material";
 import { useState, type FC } from "react";
 import { sidebarRoutes } from "src/constants/sidebarRoutes";
@@ -6,11 +6,9 @@ import ListItemIcon from "src/components/Kit/ListItemIcon";
 import ListItemText from "src/components/Kit/ListItemText";
 
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import useToggle from "src/hooks/useToggle";
 import { sidebarItem } from "src/types/sidebar";
 
 const SidebarItems: FC = () => {
-  const navigate = useNavigate();
   const { pathname } = useLocation();
   const theme = useTheme();
   const [openMenuId, setOpenMenuId] = useState<Nullable<sidebarItem["route"]>>(null);
@@ -32,7 +30,7 @@ const SidebarItems: FC = () => {
               {...props}
               onClick={() => {
                 if (hasChild) toggleMenu(route);
-                else navigate(route);
+                else window.location.href = route;
               }}
               key={index}
               disablePadding
@@ -59,7 +57,7 @@ const SidebarItems: FC = () => {
                     {...props}
                     key={route}
                     disablePadding
-                    onClick={() => navigate(route)}
+                    onClick={() => (window.location.href = route)}
                     selected={active}
                     sx={{
                       borderRight: active ? "4px solid " + theme.palette.primary.main : undefined,

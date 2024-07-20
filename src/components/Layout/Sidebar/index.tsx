@@ -11,7 +11,7 @@ const Sidebar: FC<SidebarProps> = (props) => {
   return (
     <Drawer open={open} variant="persistent">
       <Box width={sidebarWidth} flex="1">
-        <Box p={4} fontSize={20} bgcolor="primary.main" color="primary.light">
+        <Box p={4} fontSize={20} bgcolor="primary.main" color="white">
           <ListItemText primary="Graph Visualizer" />
         </Box>
         <SidebarItems />

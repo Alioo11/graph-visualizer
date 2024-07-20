@@ -5,6 +5,7 @@ import { HOCFunctionalComponent } from "src/types/components";
 import useToggle from "src/hooks/useToggle";
 import { sidebarWidth } from "src/constants/layout";
 import LayoutBreadcrumb from "./Breadcrumb";
+import { grey } from "@mui/material/colors";
 
 const Layout: HOCFunctionalComponent = ({ children }): JSX.Element => {
   const [isSidebarOpen, toggleSidebar] = useToggle(true);
@@ -17,10 +18,11 @@ const Layout: HOCFunctionalComponent = ({ children }): JSX.Element => {
         ml={`${isSidebarOpen ? sidebarWidth : 0}px`}
         display="flex"
         flexDirection="column"
+        bgcolor={grey["100"]}
       >
         <Header toggleSidebar={toggleSidebar} />
         <LayoutBreadcrumb />
-        <Container maxWidth={false} sx={{ p: "1rem", maxWidth: "1450px" }}>
+        <Container maxWidth={false} sx={{ p: "1rem", pt: 0, maxWidth: "1650px" }}>
           {children}
         </Container>
       </Box>
